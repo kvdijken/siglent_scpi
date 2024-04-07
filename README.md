@@ -34,6 +34,15 @@ An example output of the sample program is showing the output for a 1kHz signal 
 ![Alt text](resources/Screencast-from-2024-04-06-21-19-27.gif)
 
 
+## Installation
+
+Installation from pypi.org in your Python environment with:
+
+```
+python3 -m pip install siglent_scpi
+```
+
+
 ## Things to be done:
 
 - eror checking
