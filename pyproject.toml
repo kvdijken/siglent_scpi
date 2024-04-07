@@ -3,7 +3,7 @@ requires = ["hatchling","numpy","scipy","logging"]
 build-backend = "hatchling.build"
 [project]
 name = "siglent_scpi"
-version = "0.0.4"
+version = "1.0.0"
 authors = [
   { name="kvdijken", email="sla_nippers_0x@icloud.com" },
 ]
