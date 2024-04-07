@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from siglent_scpi import sds
+from siglent_scpi import SDS
 
 
 plt.rcParams['toolbar'] = 'None'
