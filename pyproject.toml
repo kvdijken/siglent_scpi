@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling","numpy","scipy","logging"]
+build-backend = "hatchling.build"
+[project]
+name = "siglent_scpi"
+version = "0.0.4"
+authors = [
+  { name="kvdijken", email="sla_nippers_0x@icloud.com" },
+]
+description = "A package to automate Siglent equipment"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
