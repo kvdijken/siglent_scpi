@@ -323,7 +323,7 @@ class SDS(Siglent):
             min = 10**(min_level/20) # from dBV to V
             # only take into regard bins for for yf>min
             # always include the fundamental
-            bins = [i for i in bins if i==0 or yf[i]>min]
+            bins = [bin for i, bin in enumerate(bins) if i==0 or yf[bin]>min]
 
         # Calculate THD in %
         vsq = [yf[p]**2 for p in bins[1:]]
