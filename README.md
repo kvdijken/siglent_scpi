@@ -19,6 +19,40 @@ The next plot shows an example experiment which has been performed with the libr
 
 Class to connect to a Siglent oscilloscope. Currently the class has only been tested on a SDS1202X-E oscilloscope. It connects to the oscilloscope using sockets over ethernet.
 
+### settings extraction
+
+A large sample from the current settings from the oscilloscope can be obtained with the `SDS.settings()` method. Output can be obtained in tuple format, in printable text format or in markdown table format. An example is the following output:
+
+```
+Timebase = 0.001 s/div
+Memory Depth = None points
+Acquire = SAMPLING
+Samplerate = 5000000.0 Sa/s
+
+Channel 1
+---------
+Attenuation = 1x
+Bandwidth limited = False
+Coupling = AC
+Offset = 0.0 V
+Skew = 0.0 s
+Trace = ON
+Unit = V
+V/div = 0.2
+Inverted = False
+
+Channel 2
+---------
+Attenuation = 1x
+Bandwidth limited = False
+Coupling = AC
+Offset = 0.0 V
+Skew = 0.0 s
+Trace = ON
+Unit = V
+V/div = 0.2
+Inverted = False
+```
 
 ## SDG
 
