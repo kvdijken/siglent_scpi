@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "siglent_scpi"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
   { name="kvdijken", email="sla_nippers_0x@icloud.com" },
 ]
-dependencies = ["numpy","scipy","logging"]
-optional-dependencies = ["matplotlib"]
+dependencies = ["numpy","scipy"]
+
 description = "A package to automate Siglent equipment"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -18,4 +18,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+[project.optional-dependencies]
+thd = ["matplotlib"]
 
